@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.base-design{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  flex-direction: row;
+  width: 75vw;
+  height: 100vh;
+ 
+ }
+ 
+ .left-content{
+   padding-top: 25px;
+   width: 20vw;
+   border: 1px solid black;
+   height: 205vh;
+   background-color: blue;
+   position: fixed;
+   
+   
+   
+ }
+ .right-content{
+   
+   
+   
+   margin-top: 15vh;
+   padding-top: 25px;
+   position: absolute;
+   height: 90vh;
+   margin-left: 25vw;
+   width: 75vw;
+     
+ }
+ .font-style{
+   color: bisque;
+ }
+ .sidebar-brand{
+   color: bisque;
+ }
+ .sidebar-heading{
+   color: darkslategrey;
+ }
+ 
+ .sidebar-divider{
+   background-color:rgba(255, 255, 255, 0.945);
+ }
+ .collapse-header{
+   color: darkslategrey;
+ }
+ .collapse-item{
+   color: bisque;
+ }
+ 
+ .top-bar{
+   margin-left: 25vw;
+   display: flex;
+   flex-direction: row;
+   padding-top: 5px;
+   position: absolute;
+   width: 75vw;
+ }
+ .col-12{
+   margin-left: 25vw;
+   display: flex;
+   flex-direction: row;
+   gap: 1px;
+ }
+ .bg-light{
+   margin-top: 2px;
+   gap: 5px;
+   display: flex;
+   flex-direction: row;
+ }
+ .btn-primary{
+   height: 7vh;
+ }
+ .icons{
+   display: flex;
+   flex-direction: row;
+ }
+ .col-3{
+   display: flex;
+   flex-direction: column;
+ }
+ .dashboard-head{
+   display: flex;
+   flex-direction: row;
+   gap: 50vw;
+ }
+ .stud-card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   border: 1px solid black;
+   width: 200px;
+   height: 250px;
+   margin: 12px;
+   padding-left: 20px;
+   padding: 15px;
+ 
+ 
+ }
+ .card-container{
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+ }
+ .control{
+   padding-left: 20px;
+   padding-bottom:2px;
+ }
+ .stud-bar{
+   display: flex;
+   flex-direction: row;
+   gap: 40vw;
+ }
+ 
