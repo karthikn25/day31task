@@ -4,7 +4,7 @@ import '../Css/sb-admin-2.css';
 import "../Css/fontawesome-free";
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser  }  from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser,faPersonChalkboard }  from "@fortawesome/free-solid-svg-icons";
 
 function Base({children}){
     const history=useHistory();
@@ -39,6 +39,11 @@ function Base({children}){
                      <span onClick={()=>history.push("/StudentList")} >Student list</span>
                      
          </a>
+         <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+         <FontAwesomeIcon icon={faPersonChalkboard} />
+         <span onClick={()=>history.push("/TeacherList")} >Teacher list</span>
+         
+</a>
          
         
          </div>
