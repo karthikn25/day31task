@@ -36,7 +36,7 @@ function UpdateStudent({students,setStudents}){
     phone : phone
   }
  
-const response=await fetch(`https://644b33c04bdbc0cc3a8ce2dd.mockapi.io/Users/${editStudent.id}`,{
+const response=await fetch(`https://644b33c04bdbc0cc3a8ce2dd.mockapi.io/Clients/${editStudent.id}`,{
   method:"PUT",
   body:JSON.stringify(updatedObject),
   headers:{
